@@ -1,0 +1,23 @@
+from tkinter import *
+from tkinter.ttk import *
+
+print("Hello World")
+
+root = Tk()
+
+root.geometry('400x400')
+
+root.title("Practice Program")
+
+practice_label = Label(root, text = "Hello World!")
+
+practice_label.pack()
+
+practice_button = Button(root, text = "first button").pack()
+
+practice_label2 = Label(root, text = 'Testing')
+
+practice_label2.pack()
+
+
+root.mainloop()

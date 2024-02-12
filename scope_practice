@@ -1,0 +1,33 @@
+from tkinter import *
+
+root = Tk()
+
+entVal2 = StringVar()
+
+ent1 = Entry(root, textvariable= entVal2)
+
+ent1.grid()
+
+
+
+entVal = "old value"
+
+#def displayMessage():
+    #global entVal
+    
+#    entVal = ent1.get()
+
+    
+    
+    
+
+
+
+
+
+
+bt1 = Button(root, text= "Print Message", command= print("Testing"))
+bt1.grid()
+print(f"entVal outside the function is {entVal}")
+root.mainloop()
+print(f"entVal2 outside the loop is {entVal2.get()}")

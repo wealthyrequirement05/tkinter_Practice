@@ -1,0 +1,32 @@
+from tkinter import * 
+from tkinter import ttk
+root = Tk()
+
+
+
+
+#Create a style object
+s = ttk.Style()
+s.configure('PracticeFrame.TFrame', background = 'blue')
+a = ttk.Style()
+a.configure('SecStyle.TFrame', background = '#D24545')
+b = ttk.Style()
+b.configure('Style3.TFrame', background = '#FE7A36')
+
+#Create frame
+PracticeFrame = ttk.Frame(root, width = 500, height = 500, style = 'PracticeFrame.TFrame')
+#PracticeFrame = Frame(root, width= 400, height = 400, bg= 'blue')
+
+#Apply the style to the frame
+
+PracticeFrame.grid()
+#SecFrame = ttk.Frame(PracticeFrame, width = 200, height = 200, style = 'SecStyle.TFrame')
+#SecFrame.grid()
+ThirdFrame = ttk.Frame(root, width= 200, height = 200, style= 'Style3.TFrame')
+ThirdFrame.grid()
+Label1 = ttk.Label(ThirdFrame, text = 'Practice with Labels', font = ('Arial', 20))
+Label1.grid(row=4, column=5)
+Label2 = ttk.Label(ThirdFrame, text = 'Practice placing', 
+                   font = ('Arial', 20))
+Label2.grid(row=6, column=8)
+root.mainloop()

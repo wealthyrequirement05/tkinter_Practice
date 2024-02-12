@@ -1,0 +1,27 @@
+from tkinter import *
+from tkinter.ttk import *
+
+
+
+
+
+main_window = Tk()
+
+main_window.geometry('400x400')
+
+
+
+lbl1 = Label(main_window, text = 'First Label')
+lbl1.grid(column= 20, row= 2, padx= 10, pady= 10)
+
+bt1 = Button(main_window, text = 'Practice Button')
+
+bt1.grid(column= 20, row = 20, padx=10, pady=10)
+
+frm1 = Frame(main_window)
+frm1.grid(column= 20, row = 30, pady= 8)
+
+ent1 = Entry(main_window, width= 10)
+ent1.grid(column= 20, row= 40, padx= 10, pady= 10)
+
+main_window.mainloop()
